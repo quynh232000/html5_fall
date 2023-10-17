@@ -159,7 +159,7 @@ const productEl = document.getElementById("product");
 const renderCa = () => {
   const htmlCategory = dataCategory.map((item) => {
     return `
-        <a href="./src/page/group.html?group=${item.key}" class="caterogy_item">
+        <a href="/src/page/group.html?group=${item.key}" class="caterogy_item">
                 <img src=${item.img} alt=${item.title} class="caterogy-img" />
                 <p class="caterogy-name">${item.title}</p>
               </a>
@@ -174,7 +174,7 @@ const renderPro = () => {
   const htmlProduct = dataProducts.map((item) => {
     return `
         <div class="product-item">
-            <a class="home-product-item" href="./src/page/detail.html?id=${
+            <a class="home-product-item" href="/src/page/detail.html?id=${
               item.id
             }">
             <div
@@ -294,7 +294,7 @@ if (searchEl) {
     if (listSearchEl) {
       let htmlListSearch = newArr.map((item) => {
         return `
-        <a href="./src/page/detail.html?id=${item.id}" class="s-find-item">
+        <a href="/src/page/detail.html?id=${item.id}" class="s-find-item">
           <img src=${item.img[0]} alt="" />
           <div >${item.name}</div>
         </a>
